@@ -8,7 +8,7 @@ class Model(nn.Module):
     #Hidden Layer(number of neurons) -> 
     #Other hidden layer... -> Output
     def __init__(self, in_features=4, h1=8, h2=9, out_features = 3):
-        super.__init__()
+        super().__init__()
         self.fc1 = nn.Linear(in_features, h1)
         self.fc2 = nn.Linear(h1, h2)
         self.out = nn.Linear(h2, out_features)
